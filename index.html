@@ -1,0 +1,132 @@
+﻿ <!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name= "viewport"content= "width=device-width, initial-scale=1.0">
+		<meta http-equiv= "X-UA-Compatible" content= "ie=edge">
+		<title>Hospital Pereyra</title>
+
+		<link rel= "stylesheet" href = "style.css">
+	</head>
+	
+	<body>
+		<header >
+			<nav class="nav-header">
+				<ul class="nav-list">
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Sobre Nosotros</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+				<div>
+					<button class="nav-btn hamburguesa">
+						<svg style="color:white;" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M7.95 11.95h32m-32 12h32m-32 12h32"/></svg>
+					</button>
+				</div>
+			</nav>
+			
+				<ul class="nav-list2">
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Sobre Nosotros</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+		</header>
+		<div class="image">
+			<img src= "gob-logo.jpeg" alt="Imagen tarjeta 4">
+		</div>
+		<div class="title text-border">			
+			<h1>Hospital Escuela de Salud Mental Doctor Carlos Pereyra</h1>
+		</div>
+
+		<div class="container">
+			<div class="card">
+				<img src= "pereyra.jpeg" alt="Imagen tarjeta 1">
+				<h2 class="card-title">Institucional</h2>
+				<div class="card-content">
+					<p>Brindamos servicios de salud integral e inclusiva, especializados en salud mental, que comprenden la promoción, prevención, tratamiento y rehabilitación social y laboral de los usuarios. </p>
+					<a href="#" class="button">Leer más</a>
+				</div>
+			</div>
+			
+			<div class="card">
+				<img src= "enlaces.jpeg" alt="Imagen tarjeta 2">
+				<h2 class="card-title">Dispositivo Enlaces</h2>
+				<div class="card-content">
+					<p>Un dispositivo para reinsertar en la sociedad a los pacientes en rehabilitación.</p>
+					<a href="#" class="button">Leer más</a>
+
+				</div>
+			</div>
+
+			<div class="card">
+				<img src= "cij2.jpeg" alt="Imagen tarjeta 3">
+				<h2 class="card-title">Centro Infanto Juvenil Nº2</h2>
+				<div class="card-content">
+					<p>Esta es la descripción de la tarjeta número 3. Contiene información importante</p>
+					<a href="#" class="button">Leer más</a>
+				</div>
+			</div>
+			<div class="card">
+				<img src= "voluntariado.png" alt="Imagen tarjeta 4">
+				<h2 class="card-title">Voluntariado</h2>
+				<div class="card-content">
+					<p>Sumate al equipo de voluntarios del hospital para realizar actividades terapéuticas con pacientes neurodivergentes. </p>
+					<a href="#" class="button">Leer más</a>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer-container">
+				<div class="footer-column">
+					<h3>Enlaces Rápidos</h3>
+					<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Servicios</a></li>
+						<li><a href="#">Nosotros</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</div>			
+				
+				<div class= "footer-column">
+					<h3>Redes Sociales</h3>
+					<ul class="social-icons">
+
+						<li><a href = "https://www.facebook.com/hosp.pereyra"><i class="fa fa-facebook"></i>Facebook</a></li>						
+						<li><a href = "https://x.com/hosppereyra"><i class="fa fa-twitter"></i>Twitter</a></li>
+						<li><a href = "https://www.instagram.com/hospitalcarlospereyra/?hl=es"><i class="fa fa-instagram"></i>Instagram</a></li>
+						<li><a href = "#"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Contacto</h3>
+					<ul>
+						<li><strong>Dirección:</strong> Ituzaingó 2856, Ciudad, Mendoza, Argentina</li>
+						<li><strong>Teléfono:</strong> 2616318392</li>
+						<li><strong>Email:</strong> contacto@ejemplo.com</li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<h3>Suscríbete</h3>
+					<form class="subscribe-form">
+						<input type="email" placeholder="tu email">
+						<button type= "submit">Enviar</button>
+					<form>
+				</div>
+			</div>
+
+			<div class= "footer-bottom">
+				<p>&copy; 2024 Ejemplo. Todos los derechos reservados. </p>
+			</div>
+		</footer>
+		<script src="app.js"></script>
+		<script>
+			const hamburguesa = document.querySelector('.hamburguesa');
+			const navList = document.querySelector('.nav-list2');
+			hamburguesa.addEventListener('click', () => {
+				navList.classList.toggle('active');
+			});
+		</script>
+	</body>
+</html>
