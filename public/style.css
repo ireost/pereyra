@@ -127,28 +127,7 @@ text-shadow: -2px 0 #EDF24B, 0 2px #EDF24B, 2px 0 #EDF24B, 0 -2px #EDF24B;
 }	
 
 
-section{
-position: relative;
-left: 25%;
-display: flex;
-width: 600px;
-height: 430px;
-}
 
-section img{
-width: 0px;
-flex-grow: 1;
-object-fit: cover;
-opacity: .8;
-transition: .5s ease;
-
-}
-
-section img:hover{
-width: 300px;
-opacity: 1;
-filter: contrast(110%);
-}
 
 
 
@@ -368,3 +347,47 @@ border-top: 1px solid #7f8c8d;
 margin-top:40px;
 }
 
+
+
+
+
+
+.carrusel {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+.imagenes {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(500px * 5); /* 5 es el total de imágenes */
+}
+
+.imagen {
+    width: 500px; /* Asegura que cada imagen ocupe todo el ancho */
+}
+
+.botones {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.button2 {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
+.button3 {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}
