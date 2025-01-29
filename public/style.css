@@ -354,22 +354,24 @@ margin-top:40px;
 
 .carrusel {
     position: relative;
-    width: 300px;
+    width: 500px; 
     overflow: hidden;
+	top: 50px;
+	left: 30%;
 }
 
 .imagenes {
     display: flex;
     transition: transform 0.5s ease;
-    width: calc(500px * 5); /* 5 es el total de imágenes */
+    width: calc(500px * 5); 
 }
 
 .imagen {
-    width: 500px; /* Asegura que cada imagen ocupe todo el ancho */
+    width: 500px; 
 }
 
 .botones {
-    position: relative;
+    position: absolute; 
     top: 50%;
     width: 100%;
     display: flex;
@@ -377,17 +379,19 @@ margin-top:40px;
     transform: translateY(-50%);
 }
 
-.button2 {
-    background-color: rgba(255, 255, 255, 0.7);
+.button2, .button3 {
+    background-color: black;
+	opacity: 0.5;
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 20px; 
     font-size: 16px;
+	color: white;
+    z-index: 1; 
 }
-.button3 {
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 16px;
+
+.button2:hover, .button3:hover{
+	transition:all .5s ease-in-out;
+	background-color: var(--tertiary-color);
+	opacity:1;
 }

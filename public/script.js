@@ -27,5 +27,5 @@ function anterior() {
 document.getElementById('next').addEventListener('click', siguiente);
 document.getElementById('prev').addEventListener('click', anterior);
 
-// Cambiar la imagen automáticamente cada 3 segundos
-setInterval(siguiente, 3000);
+
+setInterval(siguiente, 5000);
