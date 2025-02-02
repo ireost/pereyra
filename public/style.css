@@ -5,35 +5,41 @@
 --quaternary-color: #B0B492;
 --text-color: #333;
 --background-color: #f4f4f4;
+--font-family: 'Prompt';
 }
+
 
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: var(--font-family);
+font-weight: 400;
+
 }
 
 
 body{
-font-family: 'Arial', sans-serif;
 /* margin: 0; */
 /* padding: 0; */
 background-color: var(--background-color);
 }
+
 
 .nav-header{
 background-color: var(--secondary-color);
 padding: 15px 0px;
 position: fixed;
 z-index: 3;
-width: 100vw;
+/* width: 100vw; */
+width: 100%;
 }
+
 
 .nav-list{
 list-style-type: none;
 display: flex;
 justify-content: center;
-
 }
 
 
@@ -44,9 +50,11 @@ justify-content: center;
 	outline: none;
 }
 
+
 .nav-list li{
 margin: 0 20px;
 }
+
 
 .nav-list a {
 text-decoration: none;
@@ -54,10 +62,12 @@ color: var(--primary-color);
 font-size: 18px;
 }
 
+
 .nav-list a:hover{
 	transition:all .5s ease-in-out;
 	color: var(--tertiary-color);
 }
+
 
 .nav-list2 {
 	background: var(--secondary-color);
@@ -68,30 +78,33 @@ font-size: 18px;
 	z-index:4;
 	display: none;
 }
+
+
 .nav-list2.active {
 	display: block;
 	margin: 0;
 }
 
+
 .nav-list2 li{
 margin: 20px 10px;
-
-
 }
+
 
 .nav-list2 a {
 text-decoration: none;
 color: var(--primary-color);
 padding:4px;
-
 font-size: 18px;
 transition: color 0.3 ease;
 }
+
 
 .nav-list2 a:hover{
 	transition:all .5s ease-in-out;
 	color: var(--tertiary-color);
 }
+
 
 .image-logo{
 padding-top:100px;
@@ -102,11 +115,13 @@ width: 50vw;
 margin: 0 auto;
 }
 
+
 .title{
 	margin-top:50px;
 	text-align:center;
 	color: var(--primary-color);
 }
+
 
 .text-upper{
 	font-size: 40px;
@@ -114,11 +129,9 @@ margin: 0 auto;
 
 
 .text-border, .card-style{
-/*text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);*/
-/* color: white; */
-/* //text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 text-shadow: -2px 0 #EDF24B, 0 2px #EDF24B, 2px 0 #EDF24B, 0 -2px #EDF24B;
 }
+
 
 .subtitle{
 	margin-top:150px;
@@ -127,64 +140,53 @@ text-shadow: -2px 0 #EDF24B, 0 2px #EDF24B, 2px 0 #EDF24B, 0 -2px #EDF24B;
 }
 
 
-	
-
-
 .carrusel {
-    width: 500px; 
-    overflow: hidden;
-	top: 50px;
-	position: relative;
-	left: 50%; 
+    position: relative; 
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden; 
 }
+
 
 .imagenes {
     display: flex;
-	flex-wrap:wrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-    transition: transform 0.5s ease;
-    width: calc(500px * 5);
-
+    transition: transform 0.5s ease; 
 }
+
 
 .imagen {
     width: 500px; 
-	border: 1px solid rgba(0, 0, 0, 0.068);
-	border-radius: 15px;
+    height: 500px;
+    border-radius: 15px;
 }
 
-.botones {
-    position: absolute; 
-    top: 50%;
-    width: 100%;
+
+.flechas {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.button2, .button3 {
-    background-color: black;
-	opacity: 0.5;
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px; 
-    font-size: 16px;
-	color: white;
-    z-index: 1; 
-}
-
-.button2:hover, .button3:hover{
-	transition:all .5s ease-in-out;
-	background-color: var(--tertiary-color);
-	opacity:1;
+    width: 100%; 
+    z-index: 2;
 }
 
 
+.flecha-izq, .flecha-der {
+    width: 30px;
+    height: 50px; 
+    background-color: rgba(245, 255, 101, 0.5); 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
 
-
-
+.flecha-izq:hover, .flecha-der:hover {
+	background-color: rgba(245, 255, 101, 0.75); 
+}
 
 
 
@@ -239,7 +241,7 @@ text-align: center;
 	align-items: center;
 	justify-content: space-between;
 	overflow-y: auto;
-	height:167px;
+	height:170px;
 	padding: 15px;
 	color: var(--text-color);
 }
@@ -392,15 +394,8 @@ margin-top:40px;
 	.nav-list {
 		display: none;
 	}
-	.carrusel {
-		width: 481px;
-	}
-	.imagenes {
-		width: calc(125px * 5);
-	}
-	.imagen {
-		width: 125px; 
-	}
+
+
 }
 
 @media (max-width: 600px) {
@@ -425,15 +420,6 @@ margin-top:40px;
 	}
 	.nav-list {
 		display: none;
-	}
-	.carrusel {
-		width: 250px;
-	}
-	.imagenes {
-		width: calc(60px * 5);
-	}
-	.imagen {
-		width: 60px; 
 	}
 
 }

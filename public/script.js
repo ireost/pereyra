@@ -28,4 +28,4 @@ document.getElementById('next').addEventListener('click', siguiente);
 document.getElementById('prev').addEventListener('click', anterior);
 
 
-setInterval(siguiente, 4000);
+// setInterval(siguiente, 4000);
