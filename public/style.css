@@ -4,7 +4,7 @@
 --tertiary-color: #F29F05;
 --quaternary-color: #B0B492;
 --text-color: #333;
---background-color: #f4f4f4;
+--background-color: #f5f5f5;
 --font-family: 'Prompt';
 }
 
@@ -105,6 +105,16 @@ transition: color 0.3 ease;
 	color: var(--tertiary-color);
 }
 
+.image-minilogo {
+    position: absolute; /* Se posiciona respecto al nav-header */
+    right: 10px; /* Pegada a la izquierda */
+    top: 50%; /* Centrada verticalmente en el nav */
+    transform: translateY(-50%); /* Ajusta su alineación vertical */
+    width: 50px; /* Ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción */
+}
+
+
 
 .image-logo{
 padding-top:100px;
@@ -132,7 +142,6 @@ margin: 0 auto;
 text-shadow: -2px 0 #EDF24B, 0 2px #EDF24B, 2px 0 #EDF24B, 0 -2px #EDF24B;
 }
 
-
 .subtitle{
 	margin-top:150px;
 	text-align:center;
@@ -140,7 +149,7 @@ text-shadow: -2px 0 #EDF24B, 0 2px #EDF24B, 2px 0 #EDF24B, 0 -2px #EDF24B;
 }
 
 
-.carrusel {
+/* .carrusel {
     position: relative; 
     width: 500px;
     height: 500px;
@@ -153,13 +162,15 @@ text-shadow: -2px 0 #EDF24B, 0 2px #EDF24B, 2px 0 #EDF24B, 0 -2px #EDF24B;
 
 .imagenes {
     display: flex;
-    transition: transform 0.5s ease; 
+	flex-direction: row;
+	justify-content: center;
+    transition: transform 0.5s ease;
 }
 
 
 .imagen {
-    width: 500px; 
-    height: 500px;
+    width: 100vw; 
+    height: auto;
     border-radius: 15px;
 }
 
@@ -186,7 +197,7 @@ text-shadow: -2px 0 #EDF24B, 0 2px #EDF24B, 2px 0 #EDF24B, 0 -2px #EDF24B;
 
 .flecha-izq:hover, .flecha-der:hover {
 	background-color: rgba(245, 255, 101, 0.75); 
-}
+} */
 
 
 
@@ -197,7 +208,7 @@ justify-content: center;
 padding: 20px;
 z-index: 2;
 position: relative;
-top: 200px;
+top: 70px;
 animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -216,13 +227,14 @@ position: relative;
 .card:hover{
 transform: translateY(-10px);
 box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+cursor:pointer;
 }
 
 .card img {
 width: 100%;
 height: 200px;
 padding: 10px;
-object-fit: cover;
+object-fit:fill;
 border-radius: 15px;
 }
 
@@ -275,6 +287,7 @@ animation: fadeIn 0.5s ease-in-out;
 footer{
 background-color: var(--secondary-color);
 color: var(--primary-color);
+margin: 50px 0;
 padding: 40px 0px;
 font-size: 16px;
 position: relative;
@@ -416,6 +429,10 @@ margin-top:40px;
 	}
 	.nav-list {
 		display: none;
+	}
+	.carrusel {
+		width: 100%;
+		height: auto;
 	}
 
 }
