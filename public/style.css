@@ -105,6 +105,14 @@ transition: color 0.3 ease;
 	color: var(--tertiary-color);
 }
 
+.image-nav{
+	position: absolute;
+	top: 0;
+	right: 5%;
+	width: 100px;
+	height: 100px;
+}
+
 
 .image-logo{
 padding-top:100px;
