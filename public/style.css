@@ -148,7 +148,7 @@ text-shadow: -2px 0 #EDF24B, 0 2px #EDF24B, 2px 0 #EDF24B, 0 -2px #EDF24B;
 }
 
 
-/* .carrusel {
+ .carrusel {
     position: relative; 
     width: 500px;
     height: 500px;
@@ -194,7 +194,7 @@ text-shadow: -2px 0 #EDF24B, 0 2px #EDF24B, 2px 0 #EDF24B, 0 -2px #EDF24B;
 
 .flecha-izq:hover, .flecha-der:hover {
 	background-color: rgba(245, 255, 101, 0.75); 
-} */
+} 
 
 
 
